@@ -55,10 +55,6 @@ class DescriptionPlace extends StatelessWidget {
           children: [titleStars, descriptionWidget],
         ));
 
-    return SingleChildScrollView(
-      child: descriptionPlace,
-      scrollDirection: Axis.vertical,
-    );
-    ;
+    return descriptionPlace;
   }
 }
