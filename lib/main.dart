@@ -16,9 +16,29 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Hola Mundo"),
+            title: Text("Second test"),
           ),
-          body: Center(child: Text("Hola Mundo")),
+          body: Container(
+            alignment: Alignment.center,
+            child: Container(
+              alignment: Alignment.center,
+              color: Colors.black45,
+              child: Text(
+                "My first test on Flutter",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              height: 80,
+            ),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/flutter-background.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
         )
         //MyHomePage(title: 'Flutter Home Page'),
         );
