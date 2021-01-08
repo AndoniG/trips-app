@@ -6,11 +6,11 @@ class ReviewList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        new Review("assets/images/people.jpg", "Andoni G", "1 review 4 photos",
+        Review("assets/images/people.jpg", "Andoni G", "1 review 4 photos",
             "Amazing place!", 5),
-        new Review("assets/images/people.jpg", "Monica O", "7 review 2 photos",
+        Review("assets/images/ann.jpg", "Monica O", "7 review 2 photos",
             "Nice place!", 4.5),
-        new Review("assets/images/people.jpg", "Carlos D", "3 review 15 photos",
+        Review("assets/images/guy.jpg", "Carlos D", "3 review 15 photos",
             "Cool place!", 2.5),
       ],
     );
